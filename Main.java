@@ -1,5 +1,6 @@
 
 import java.lang.Character.Subset;
+import java.util.Scanner;
 
 public class Main{
     static int add(int a1,int a2){
@@ -172,5 +173,13 @@ public class Main{
         System.out.println("OOPS");
         OOPS obj = new OOPS();
         obj.main();
+
+        //Scanner Class
+        Scanner scn =  new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String name = scn.nextLine();
+        System.out.println("your name is: "+name);
+        // nextBoolean() nextByte() nextDouble() nextFloat() nextInt()	nextLine()	nextLong()	nextShort()
+
     }
 }

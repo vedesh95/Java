@@ -47,5 +47,32 @@ class OOPS {
         //polymorpism
         Polymorphism p = new Polymorphism();
         p.demo();
+
+        //Inner Class
+        //An inner class can also be static, which means that you can access it without creating an object of the outer class
+        // just like static attributes and methods, a static inner class does not have access to members of the outer class.
+        InnerClass innerClass = new InnerClass();
+        innerClass.demo();
+
+        //Abstract
+        //Abstract method: can only be used in an abstract class
+        //abstract class can have both abstract methods and regular methods
+        //not demoing it cause its easy enough
+
+        //interfaces
+        //Interface methods are by default abstract and public
+        //Interface attributes are by default public, static and final
+        Interface ifc = new Interface();
+        ifc.demo();
+        
+        //enum
+        //enum is a special class. contains various constants(like final variables). constant's name should be in UPPERCASE
+        ENUM enm = new ENUM();
+        enm.demo();
+        //enum can, just like class have attributes and methods.
+        //enum constants are public, static and final (unchangeable - cannot be overridden).
+        // An enum cannot be used to create objects
+        //cannot extend other classes 
+        //but it can implement interfaces
     }
 }
