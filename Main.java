@@ -1,6 +1,8 @@
 
 import java.lang.Character.Subset;
 import java.util.Scanner;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 public class Main{
     static int add(int a1,int a2){
@@ -14,6 +16,18 @@ public class Main{
         System.out.println("age of "+s1+ " is "+a1);
         System.out.println("age of "+s2+ " is "+a2);
         return a1+a2;
+    }
+    public static void programs(){
+        System.out.println("Enter num 1");
+        Scanner scn = new Scanner(System.in);
+        int num1 = scn.nextInt();
+        System.out.println("Enter num 2");
+        int num2 = scn.nextInt();
+        System.out.println("result is " + (num1+num2));
+
+        String words = "One two three four vedesh";
+        int numwords = words.split("\\s").length;
+        System.out.println(numwords);
     }
     public static void main(String [] args){
         System.out.println("Hello vedesh");
@@ -176,10 +190,47 @@ public class Main{
 
         //Scanner Class
         Scanner scn =  new Scanner(System.in);
-        System.out.println("Enter your name:");
-        String name = scn.nextLine();
-        System.out.println("your name is: "+name);
+        // System.out.println("Enter your name:");
+        // String name = scn.nextLine();
+        // System.out.println("your name is: "+name);
         // nextBoolean() nextByte() nextDouble() nextFloat() nextInt()	nextLine()	nextLong()	nextShort()
 
+        //Date class
+        //LocalDate	Represents a date (year, month, day (yyyy-MM-dd))
+        // LocalTime	Represents a time (hour, minute, second and nanoseconds (HH-mm-ss-ns))
+        // LocalDateTime	Represents both a date and a time (yyyy-MM-dd-HH-mm-ss-ns)
+        // DateTimeFormatter
+        LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println(localDateTime);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String formattedString = localDateTime.format(dateTimeFormatter);
+        System.out.println(formattedString);
+
+        //collections
+        System.err.println("\nCollections start");
+        Collections collections = new Collections();
+        collections.demo();
+        System.out.println("Collections Over!!");
+
+        //exception handling
+        try{
+            int[] arrNum = {1,2,3};
+            System.out.println(arrNum[10]);
+            throw new ArrayIndexOutOfBoundsException("demo ArrayIndexOutOfBoundsException"); // to throw custom error
+        }catch(Exception e){
+            System.out.println("Ooooops!");
+            System.out.println(e);
+        }finally{
+            System.out.println("In finally!!");
+        }
+
+        //Threads
+        Threads th = new Threads();
+        // th.demo();
+
+        programs();
+
+        //throws
+        // Used to indicate what exception type may be thrown by a method
     }
 }
