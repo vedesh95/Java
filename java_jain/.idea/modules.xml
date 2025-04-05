@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java_jain.iml" filepath="$PROJECT_DIR$/java_jain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singletonAndImmutable.iml" filepath="$PROJECT_DIR$/singletonAndImmutable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/singletonAndImmutable.main.iml" filepath="$PROJECT_DIR$/.idea/modules/singletonAndImmutable.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/singletonAndImmutable.test.iml" filepath="$PROJECT_DIR$/.idea/modules/singletonAndImmutable.test.iml" />
+    </modules>
+  </component>
+</project>
